@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents</title>
+</head>
+<body>
+<table>
+    <caption><h2>There are some posts</h2></caption>
+    <tr>
+        <td><h2>Post title</h2></td>
+        <td><h2>Post defination</h2></td>
+        <td><h2>Post body</h2></td>
+    </tr>
+    {%for post in posts%}
+    <tr>
+        <td>{{post.title}}</td>
+        <td>{{post.definition}}</td>
+        <td>{{post.body}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>
